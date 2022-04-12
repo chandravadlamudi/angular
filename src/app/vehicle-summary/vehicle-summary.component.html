@@ -1,0 +1,76 @@
+<div>
+    <input [(ngModel)]="filterTerm">
+    <button (click)="filter()">filter</button> 
+
+    <select [(ngModel)]="column">
+        <option value="vehicle">vehicle</option>
+        <option value="id">id</option>
+        <option value="color">color</option>
+    </select>
+    <select [(ngModel)]="order">
+        <option>asc</option>
+        <option>desc</option>
+        
+    </select>
+    <button (click)="sort()">sort</button> 
+
+
+    <select [(ngModel)]="page">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+    </select>
+    <select [(ngModel)]="limit">
+        <option>1</option>
+        <option>5</option>
+        <option>10</option>
+        <option>15</option>
+        
+    </select> 
+    <button (click)="paged()">page</button> 
+
+    
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>vehicle</th>
+                <th>manufacturer</th>
+                <th>model</th>
+                <th>type</th>
+                <th>fuel</th>
+                <th>color</th>
+                <th>image</th>
+                <th>id</th>
+    
+            </tr>
+            
+        </thead>
+        <tbody>
+            <tr *ngFor="let vehicle of vehicles">
+                <td>{{vehicle.Vehicle}}</td>
+                <td>{{vehicle.manufacturer}}</td>
+                <td>{{vehicle.model|uppercase}}</td>
+                <td>{{vehicle.type}}</td>
+                <td>{{vehicle.fuel}}</td>
+                <td>{{vehicle.color}}</td>
+                <td><img src="{{vehicle.image}}" alt="" width="50" height="50"></td>
+                <td>{{vehicle.id}}</td>
+            </tr> 
+
+
+
+            
+            
+        </tbody>
+    </table>
+    
+</div>

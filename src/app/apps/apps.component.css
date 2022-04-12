@@ -1,0 +1,31 @@
+div{
+    overflow: auto;
+    width:100%;
+    height:100%;
+}
+td{
+    color: white;
+} 
+
+.red{
+    background-color: red;
+    height: 50px;
+
+}
+.green{
+    background-color: green;
+    height: 50px;
+
+}
+
+.show{
+    background-color: aqua;
+    height: 50px;
+}
+.hide{
+    visibility: hidden;
+    height: 50px;
+}
+
+
+

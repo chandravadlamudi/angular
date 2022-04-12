@@ -1,0 +1,99 @@
+<div>
+<h1>calculator</h1>
+
+<input type="number" [ngModel]="num1">
+<input type="number" [ngModel]="num2">
+<button (click)="Sum()">+</button>
+<button (click)="Sub()">-</button>
+<button (click)="Mul()">*</button>
+<button (click)="Division()">/</button>
+
+<h1>Rectangle</h1>
+<h6>height:</h6>
+<input type="number" [(ngModel)]="num3">
+<h6>width:</h6>
+<input type="number" [(ngModel)]="num4"><br>
+<button (click)="Area()">Area </button><br>
+<button (click)="Perimeter()">perimeter</button>
+<p>Area is {{areaResult}}</p>
+<p>perimeter is{{perimeterResult}}</p> 
+
+
+<h1>Event Registration</h1>
+<input [(ngModel)] ="name">
+<button (click)="submit()">Register</button>
+<ul>
+    <li *ngFor="let name of names">
+        {{name}}
+    </li>
+</ul> 
+
+
+<h6>cart</h6>
+<label>product:</label>
+<input [(ngModel)]="product" type="names">
+<label>quantity:</label>
+<input [(ngModel)]="quantity" type="number">
+<label>price:</label>
+<input [(ngModel)]="price" type="number"> 
+<button (click)="addtocart()">addtocart</button>
+<table>
+    
+        <tbody>
+            <tr *ngFor="let product of products">
+                <td>{{product.product}}</td>
+                <td>{{product.quantity}}</td>
+                <td>{{product.price}}</td>
+            </tr>
+        </tbody>
+    
+</table>
+
+
+<h6>create account</h6>
+<label>name:</label>
+<input [(ngModel)]="name" type="text">
+<label>email:</label>
+<input [(ngModel)]="email" type="text">
+<label>phone:</label>
+<input [(ngModel)]="phone" type="text"> 
+<label>city:</label>
+<input [(ngModel)]="city" type="text"> 
+<button (click)="signup()">signup</button>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>name</th>
+            <th>email</th>
+            <th>phone</th>
+            <th>city</th>
+        </tr>
+    </thead>
+    
+        <tbody>
+            <tr *ngFor="let user of users">
+                <td>{{user.name}}</td>
+                <td>{{user.email}}</td>
+                <td>{{user.phone}}</td>
+                <td>{{user.city}}</td>
+            </tr>
+        </tbody>
+    
+</table>
+
+
+<div (click)="change()"[ngClass]="isRed?'red':'green'"> isRed
+
+</div>
+
+<div (click)="hide()"[ngClass]="ishide?'hide':'show'">
+    cgvbjvvhvgnc</div> 
+
+<button (click)="hide()">hide/show</button>
+
+
+
+
+
+
+

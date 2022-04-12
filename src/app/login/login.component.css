@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    color: black;
+}
+.child{
+    background-color: white;
+    height: 70vh;
+    width: 40vw;
+    
+    
+}
+input {
+    margin: 10px;
+    justify-content: center;
+    border-radius: 20px;
+    
+}
+
+button{
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+
+}
+label{
+    color: black;
+}
+.parent{
+    height: 100vh;
+    width: 100vw;
+    background-color:blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

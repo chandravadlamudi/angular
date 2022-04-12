@@ -1,0 +1,47 @@
+.parent{
+    height: 100vh;
+    width: 100vw;
+    background-color:aqua ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.child{
+    height: 90vh;
+    width: 85vw;
+    background-color: aliceblue;
+    display: flex;
+    
+    
+}
+.heading {
+    text-align: center;
+}
+img{
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+
+    
+}
+
+.left{
+    height: 90vh;
+    width: 20vw;
+    background-color: blueviolet;
+}
+
+button {
+    margin-left: 100px;
+} 
+
+.right{
+    background-color: brown;
+    width: 100%;
+    color: aliceblue;
+} 
+
+
+
